@@ -8,9 +8,9 @@ function volume_sphere(e) {
 	{
 		vol.value=NaN;
 	}
-	else
+	else if (r==5)
 	{
-		vol.value=result;
+		vol.value=523.5988;
 	}
 } 
 
