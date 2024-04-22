@@ -4,7 +4,14 @@ function volume_sphere(e) {
   let r=document.getElementById('radius').value;
 	let result=((4/3)*(Math.PI)*(r*r*r));
 	let vol=document.getElementById('volume');
-	vol.value=result;
+	if(r<0)
+	{
+		vol.value=NaN;
+	}
+	else
+	{
+		vol.value=result;
+	}
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
