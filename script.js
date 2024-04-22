@@ -12,6 +12,10 @@ function volume_sphere(e) {
 	{
 		vol.value=523.5988;
 	}
+	else
+	{
+		vol.value=result;
+	}
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
